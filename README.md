@@ -1,11 +1,11 @@
-# 🐧 Linux Server Setup Automation Script
+# Linux Server Setup Automation Script
 
 A Bash script that automates **initial server hardening and configuration** on Ubuntu, Debian, Fedora, AlmaLinux and Rocky Linux.  
 Perfect for quickly bootstrapping a new server with secure defaults.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - ✅ System update & base tools installation (`curl`, `git`, `vim`, `htop`, etc.)
 - ✅ Timezone configuration
@@ -24,7 +24,7 @@ Perfect for quickly bootstrapping a new server with secure defaults.
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository and enter the project directory:
 
@@ -36,7 +36,6 @@ chmod +x bootstrap-server.sh
 Example:
 
 bash
-Копировать код
 sudo ./bootstrap-server.sh \
   --username katto \
   --ssh-key "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICsQlPmByxcccW+r//KgdExqc6aDedLzhQjnYpjz0KSS kurochkaseva@gmail.com" \
@@ -58,7 +57,6 @@ Parameters:
 After running the script:
 
 bash
-Копировать код
 whoami
 # katto
 
@@ -73,7 +71,6 @@ ssh katto@localhost
 MOTD banner:
 
 pgsql
-Копировать код
 Welcome! This server is managed by bootstrap-server.sh
 - SSH root login: disabled
 - Check: sudo systemctl status fail2ban
